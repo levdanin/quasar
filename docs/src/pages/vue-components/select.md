@@ -112,6 +112,10 @@ If you use functions for custom props always check if the option is null. These 
 The list of options is rendered using virtual scroll, so if you render more than one element for an option you must set a `q-virtual-scroll--with-prev` class on all elements except the first one.
 :::
 
+::: warning
+Using the 'v-on="scope.itemEvents"' is REQUIRED in slot "option", or user wouldn't be able to select the option with mouse.
+:::
+
 <doc-example title="Options slot" file="QSelect/OptionSlot" />
 
 Here is another example where we add a QToggle to each option. The possibilities are endless.
